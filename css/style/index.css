@@ -214,9 +214,6 @@ h3{
     font: 600 36px arial;
     color: #2e2e43;
 }
-#all-1{
-    gap: 16px;
-}
 #all-2{
     padding: 0 15px 120px 15px;
 }
@@ -261,7 +258,6 @@ h3{
 }
 /* CONTAINER */
 #all-3{
-    gap: 16px;
     padding-bottom: 100px;
 }
 .text-2{
@@ -362,7 +358,6 @@ h3{
     padding-bottom: 50px;
 }
 #all-4{
-    gap: 16px;
     padding-bottom: 50px;
 }
 .section-1{
@@ -467,7 +462,6 @@ footer{
 #all-5{
     display: flex;
     justify-content: space-between;
-    gap: 16px;
     padding-bottom: 80px;
 }
 .footer-section, .footer-text{
@@ -551,26 +545,24 @@ footer{
     #all{margin: 80px 0;}
     #all-2{padding: 0 15px 40px 15px;}
     #all-3{padding-bottom: 40px;}
-    .header-title{width: 100%; text-align: center;}
+    .header-title{text-align: center;}
     .header-form{justify-content: center;}
-    .input-view, .content, .text-4{width: 50%;}
+    .input-view, .content, .text-4, .text{width: 50%;}
     #tablet{display: block;}
     .title{padding-bottom: 80px;}
     .title p{width: 85%;}
     .bg{padding: 80px 0 50px 0; margin-bottom: 80px;}
-    .text{width: 48%; padding-bottom: 30px;}
+    .text{padding-bottom: 30px;}
     .text h4{padding-bottom: 30px;}
-    .all, .section, .bg-1{width: 48%; margin-bottom: 40px;}
-    .small-text, .form-2, .input-view-1, .input-view-2{width: 100%;}
-    .text-2, .all-1{width: 48%;}
+    .all, .section, .bg-1{margin-bottom: 40px;}
+    .header-title, .small-text, .form-2, .input-view-1, .input-view-2, .section-1, .section-1 p, iframe, #form{width: 100%;}
+    .text-2, .all-1, .all, .section, .bg-1, #all-4{width: 48%;}
     .bg-color{padding: 80px 0; margin-bottom: 80px;}
     .view-1{display: flex; justify-content: space-between; padding-bottom: 30px;}
-    #all-4{flex-direction: column; width: 48%; padding: 0;}
-    .section-1{width: 100%; margin-bottom: 50px;}
-    .section-1 p{width: 100%;}
-    .view-2, .form-1{flex-direction: column; padding: 0;}
-    iframe{width: 100%; padding: 0;}
-    #form{width: 100%; padding: 50px;}
+    #all-4, .view-2, .form-1{flex-direction: column;}
+    .section-1{margin-bottom: 50px;}
+    .view-2, .form-1, iframe, #all-4{padding: 0;}
+    #form{padding: 50px;}
     .img-2{width: 30%; padding-bottom: 40px;}
     .footer-section, .footer-text{width: 40%;}
 }
@@ -582,17 +574,17 @@ footer{
     .view{position: static;}
     #all-navbar, #all, #all-1, #all-2, #all-3, #all-4, .view-2, #all-5, .form-1{flex-direction: column;}
     #all{align-items: start; margin: 50px 0;}
-    #all-1, #all-3{gap: 30px;}
-    #all-2{padding: 0 15px 50px 15px; gap: 30px;}
+    #all-1, #all-2, #all-3{gap: 30px;}
+    #all-2{padding: 0 15px 50px 15px;}
     #all-4{gap: 50px;}
-    .header-title, .text-4, #all-5{width: 100%;  text-align: center;}
+    .header-title, .text-4, #all-5{text-align: center;}
     .bg, .bg-color{padding: 50px 0; margin-bottom: 50px;}
-    .content{width: 100%; padding: 30px;}
+    .content{padding: 30px;}
     #tablet{display: none;}
     .title, #all-3, .view-2, .footer-section p, .title-1{padding-bottom: 50px;}
     .text-2{padding-bottom: 20px;}
     h1, .title-1 h4{font-size: 32px;}
-    .input-view, .small-text, .text-2, .section-1 p, iframe, #form, .input-view-2, .bg-1, .title p, .section, .section-1, .all, .all-1, .text, .footer-section, .footer-text, .input-view-1{width: 100%;}
+    .header-title, .text-4, #all-5, .content, .input-view, .small-text, .text-2, .section-1 p, iframe, #form, .input-view-2, .bg-1, .title p, .section, .section-1, .all, .all-1, .text, .footer-section, .footer-text, .input-view-1{width: 100%;}
     h3, .text-2 h4, .text-4 h5{font-size: 20px;}
     .text h4{font-size: 26px; padding-bottom: 15px;}
     .view-1, iframe{padding: 0;}
