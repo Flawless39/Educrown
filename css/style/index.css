@@ -33,7 +33,7 @@ nav ul{
     justify-content: space-between;
     width: 650px;
 }
-nav a{
+nav a, .dropdown a{
     font: 500 16px arial;
     color: #fff;
     text-transform: capitalize;
@@ -42,6 +42,36 @@ nav a{
 }
 nav a:hover{
     color: #31dc89;
+}
+.dropdown-content{
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+    width: 100%;
+    transition: .4s;
+    opacity: 0;
+    pointer-events: none;
+}
+.dropdown{
+    display: none;
+}
+.dropdown-content a{
+    display: inline-block;
+    font: 500 16px arial;
+    color: #000;
+    text-transform: capitalize;
+    min-width: 210px;
+    padding: 12px 20px;
+    transition: .4s;
+}
+.dropdown-content a:hover{
+    background-color: #eee;
+    color: #000;
+}
+.dropdown:hover .dropdown-content{
+    opacity: 1;
+    pointer-events: auto;
 }
 .up{
     position: absolute;
@@ -538,7 +568,7 @@ footer{
 @media(min-width: 768px) and (max-width: 1200px){
     header, .header-title{height: 95vh;}
     .container{width: 90%;}
-    nav{display: none;}
+    .dropdown{display: block;}
     .space{height: auto;}
     .view{position: static;}
     #all, #all-1, #all-2, #all-3, #all-4{flex-wrap: wrap;}
@@ -565,14 +595,15 @@ footer{
     #form{padding: 50px;}
     .img-2{width: 30%; padding-bottom: 40px;}
     .footer-section, .footer-text{width: 40%;}
+    nav{display: none;}
 }
 @media(max-width: 768px){
     header, .header-title{height: 60vh;}
     .container{width: 95%;}
-    nav{display: none;}
+    .dropdown{display: block;}
     .space{height: auto;}
     .view{position: static;}
-    #all-navbar, #all, #all-1, #all-2, #all-3, #all-4, .view-2, #all-5, .form-1{flex-direction: column;}
+    #all, #all-1, #all-2, #all-3, #all-4, .view-2, #all-5, .form-1{flex-direction: column;}
     #all{align-items: start; margin: 50px 0;}
     #all-1, #all-2, #all-3{gap: 30px;}
     #all-2{padding: 0 15px 50px 15px;}
@@ -591,4 +622,5 @@ footer{
     #form h5{font-size: 22px; padding-bottom: 30px;}
     .footer-link{padding-bottom: 35px;}
     .footer-text h6{font-size: 18px;}
+    nav{display: none;}
 }
